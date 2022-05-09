@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+          margin: 0;
+          overflow: hidden;
+          font-family: 'Poppins', sans-serif;
+        }
+        pre {
+          font-size: 7em;
+        }
+        .tick line {
+          stroke: #C0C0BB;
+        }
+        .tick text {
+          fill: black;
+        }
+        .mark {
+          fill: yellowgreen;
+        }
+        .axis-label {
+          font-size: 1.2em;
+          fill: pink;
+        }
+      </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DV Dashboard</title>
+    <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.stock.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://unpkg.com/react@16.9.0/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@16.9.0/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/d3@5.11.0/dist/d3.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+    <script src="https://unpkg.com/lightweight-charts/dist/lightweight-charts.standalone.production.js"></script>
+    
+    
+</head>
+<body bgcolor="#9A0680">
+    <h1 align="center" style="font-size: 30px; color: #001E6C; background-color: #F8F400;">STOCK MARKET ANALYSIS</h1>
+    <hr>
+    <table>
+        <tr>
+            <td>
+              
+                <script type="text/javascript" src="nifty_index.js"></script>
+                <div id="linechart_index" style="width: 500px; height: 300px; background:'#B4FF9F;'"></div>
+            </td>
+            <td>
+                <script type="text/javascript" src="investment.js"></script>
+                <div id="piechart" style="width: 600px; height: 300px;"></div>
+            </td>
+            <td rowspan="3">
+              <h2 align="center" style="color:aqua">Binance BTCUSDT Live Chart</h2>
+              <div id="tvchart" style="background-color: aquamarine;"></div>
+              <p style="font-size: 20px; color:cyan;" align="right">Designed by...</p>
+    <p style="font-size: 20px; color:gold" align="right">Supan Shah-190280107140</p>
+    <p style="font-size: 20px; color:gold" align="right">Megh Shah-190280107136</p>
+              <script type="text/javascript" src="index1.js"></script>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div id="root" style="background-color: '#B4FF9F'"></div>
+                <script src="bundle.js"></script> 
+    
+            </td>
+            <td>
+               
+                <script type="text/javascript" src="ipo.js">
+                    
+                  </script>
+                <div id="columnchart_values" style="width: 600px; height: 300px;"></div> 
+            </td>
+            
+        </tr>
+        <tr>
+            <td>
+    <script type="text/javascript" src="dividend.js"></script>
+    <div id="series_chart_div" style="width: 550px; height: 300px;"></div>
+            </td>
+            <td>
+                <script type="text/javascript" src="banking_sector.js"></script>
+                <div id="donutchart" style="width: 600px; height: 300px;"></div>
+            </td>
+            
+        </tr>        
+    </table>
+    
+</body>
+</html>
